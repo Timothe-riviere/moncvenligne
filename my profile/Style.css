@@ -1,0 +1,280 @@
+
+*{
+    box-sizing:border-box;
+    text-align: justify;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background: #ededed;
+}
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*HEADER & FOOTER*/
+header, footer{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: rgb(13, 14, 14);
+    box-shadow: 0px 0px 15px #333;
+}
+header{
+    border-bottom: 2px solid #fff;
+    height: 120px;
+}
+
+header h1{
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    width: 90%;
+    font-size: 40px;
+}
+footer{
+    border-top: 2px solid #fff;
+}
+footer h1{
+text-align: center;
+color: white;
+}
+
+/*SECTIONS*/
+
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 80%;
+    padding-bottom: 20px;
+    margin: 40px auto;
+    box-shadow: 0px 0px 10px rgb(39, 40, 43);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+section h2{
+    margin: 20px 0;
+    width: 90%;
+}
+section > div{
+    width: 90%;
+}
+
+/*SECTION INFOS*/
+.photo{
+    text-align: center;
+}
+.photo img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #777;
+    border-radius: 50%;
+    margin-top: -55px;
+}
+
+.presentation{
+    border-bottom: none;
+    padding-right: 20px;
+    margin-left: auto;
+}
+
+/*SECTION FORMATION*/
+.formation{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.clique{
+    color: blue;
+}
+
+
+/*SECTION PARCOURS PRO*/
+
+/*SECTION INTERETS*/
+.intérêts{
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: justify;
+    margin-bottom: 20px;
+}
+.intérêts img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #555;
+}
+/*Menus*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav{
+    width: 100%;
+    margin: 20px;
+    background-color: white;
+    position:sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+/*Section me contacter*/
+
+
+
+/*VERSION BUREAU DU CV*/
+@media screen and (min-width: 980px){
+    section{
+        width: 80%;
+        box-shadow: 0px 0px 10px rgb(39, 40, 43);
+    }
+    a:hover{
+        color: #EA0;
+    }
+    header h1{
+        width: 80%;
+    }
+  
+    .presentation{
+        border-bottom: none;
+        padding-right: 20px;
+        margin-left:0px;
+    }
+    .contact{
+        padding-left: 20px;
+        margin-right: auto;
+    }
+    .presentation a{
+        border: 2px solid transparent;
+    }
+
+    .intérêts{
+        flex: 0 1 25%;
+    }
+}
+
+/*Page infos*/
+.infh{
+    background-color: rgb(51, 51, 161);
+}
+.inff{
+    background-color:rgb(51, 51, 161) ;
+}
+.infp{
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.esav{
+    color: blue;
+}
+
+/*Ma galerie*/
+.galh{
+    background-color: rgba(71, 69, 68, 0.897);
+
+}
+.galf{
+    background-color: rgba(71, 69, 68, 0.897);
+
+}
+.gals1{
+    box-shadow: 0px 0px 10px rgb(31, 83, 238);
+    background-color: #fff;
+    border-radius: 10px;
+}
+.gals2{
+    box-shadow: 0px 0px 10px rgb(186, 13, 202);
+    background-color: #fff;
+    border-radius: 10px;
+}
+.gals3{
+    box-shadow: 0px 0px 10px rgb(226, 241, 13);
+    background-color: #fff;
+    border-radius: 10px;
+}
+.dessin{
+    border-style: groove;
+    border-width: 5px;
+    
+    
+}
+
